@@ -44,7 +44,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #48403e !important;
 }
 
 .bg-dark {
@@ -88,6 +88,62 @@ img::selection {
 img::-moz-selection {
   color: #fff;
   background: transparent;
+}
+
+button.rec-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  border-radius: 35px;
+  margin: 18px;
+  outline: none;
+}
+
+.not-rec {
+  background-color: darkred;
+}
+
+.rec {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+  }
+  65% {
+    -webkit-box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0.3);
+  }
+  90% {
+    -webkit-box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0);
+    box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3);
+  }
+  65% {
+    -webkit-box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0.3);
+  }
+  90% {
+    -webkit-box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0);
+    box-shadow: 0px 0px 5px 13px rgba(173, 0, 0, 0);
+  }
 }
 
 #mainNav {

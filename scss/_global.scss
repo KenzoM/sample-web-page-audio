@@ -37,7 +37,8 @@ h6 {
 }
 
 .bg-primary {
-  background-color: $primary !important;
+  // background-color: $primary !important;
+  background-color: #48403e !important;
 }
 
 .bg-dark {
@@ -76,4 +77,38 @@ img::selection {
 img::-moz-selection {
   color: $white;
   background: transparent;
+}
+
+button.rec-btn {
+	width: 35px;
+	height: 35px;
+	font-size: 0;
+	background-color: red;
+	border: 0;
+	border-radius: 35px;
+	margin: 18px;
+	outline: none;
+}
+
+.not-rec{
+	background-color: darkred;
+}
+
+.rec{
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse{
+	0%{
+		box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+	}
+	65%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+	}
+	90%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+	}
 }
